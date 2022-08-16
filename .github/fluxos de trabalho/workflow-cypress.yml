@@ -15,6 +15,7 @@ jobs:
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
         with:
+          config-file: cypress.config.js
           install-command: yarn install
           wait-on: ${{ secrets.BASE_URL }}
           wait-on-timeout: 120
