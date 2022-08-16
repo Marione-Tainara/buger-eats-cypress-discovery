@@ -3,7 +3,7 @@ name: Cypress Regression Tests
 on: [push]
 
 jobs:
-
+config-file: cypress.config.js
   ui-chrome-tests:
     runs-on: ubuntu-latest
     container: cypress/browsers:node14.17.0-chrome88-ff89
