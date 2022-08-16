@@ -1,0 +1,50 @@
+{
+  "signup": {
+    "name": "Marione Pereira",
+    "cpf": "85448273068",
+    "email": "pereiramarione@gmail.com",
+    "whatsapp": "51999999999",
+    "address": {
+      "cep": "91350090",
+      "street": "Rua Roque Calage",
+      "number": "180",
+      "details": "apto 210",
+      "district": "Passo da Areia",
+      "city_state": "Porto Alegre/RS"
+    },
+    "metodo_entrega": "Moto",
+    "cnh": "cnh-digital.jpg"
+  },
+  "cpf_inv": {
+    "name": "Mariana Silva",
+    "cpf": "85448abc068",
+    "email": "mariana93@gmail.com",
+    "whatsapp": "51999999999",
+    "address": {
+      "cep": "91350090",
+      "street": "Rua Roque Calage",
+      "number": "180",
+      "details": "apto 210",
+      "district": "Passo da Areia",
+      "city_state": "Porto Alegre/RS"
+    },
+    "metodo_entrega": "Moto",
+    "cnh": "cnh-digital.jpg"
+  },
+  "email_inv": {
+    "name": "Marione Pereira",
+    "cpf": "85448273068",
+    "email": "mari.com.br",
+    "whatsapp": "51999999999",
+    "address": {
+      "cep": "91350090",
+      "street": "Rua Roque Calage",
+      "number": "180",
+      "details": "apto 210",
+      "district": "Passo da Areia",
+      "city_state": "Porto Alegre/RS"
+    },
+    "metodo_entrega": "Moto",
+    "cnh": "cnh-digital.jpg"
+  }
+}
