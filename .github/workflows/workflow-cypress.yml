@@ -3,7 +3,6 @@ name: Cypress Regression Tests
 on: [push]
 
 jobs:
-config-file: cypress.config.js
   ui-chrome-tests:
     runs-on: ubuntu-latest
     container: cypress/browsers:node14.17.0-chrome88-ff89
@@ -26,3 +25,4 @@ config-file: cypress.config.js
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          config-file: cypress.config.js
