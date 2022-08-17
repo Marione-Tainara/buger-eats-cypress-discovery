@@ -1,28 +1,12 @@
-name: Cypress Regression Tests
-
+name: E2E on Chrome
 on: [push]
-
 jobs:
-
-  ui-chrome-tests:
-    runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.0-chrome88-ff89
-    strategy:
-      fail-fast: false
+  cypress-run:
+    runs-on: ubuntu-20.04
+    # let's make sure our tests pass on Chrome browser
+    name: E2E on Chrome
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      
-      - name: 'UI Tests - Chrome'
-        uses: cypress-io/github-action@v2
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v4
         with:
-          install-command: yarn install
-          wait-on: ${{ secrets.BASE_URL }}
-          wait-on-timeout: 120
           browser: chrome
-          record: true
-          group: 'UI - Chrome'
-          spec: cypress/integration/*
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
