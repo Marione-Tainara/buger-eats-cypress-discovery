@@ -3,11 +3,6 @@ import SignupFactory from "../factories/SignupFactory";
 import SignupPage from "../pages/SignupPage";
 
 describe("Signup", () => {
-  // beforeEach(function () {
-  //   cy.fixture("deliver").then((deli) => {
-  //     this.deliver = deli;
-  //   });
-  // });
   it("user should become a deliverer", function () {
     var deliver = SignupFactory.deliver();
     signup.go();
@@ -84,9 +79,3 @@ describe("Signup", () => {
   });
 });
 
-// npm install cypress-file-upload --save-dev instalar o pacote recursos pra upload
-// troquei pra versão 5.0.4 pq não estava reconhecendo as funções da lib
-// ^ reGex para dizer que começa com / e $ termina com
-//função da do pacote/lib
-//npm install faker@5.5.3 --save-dev lib pra criar dados dinamicos
-//npm install gerador-validadir-cpf --save-dev lib pra gerar cpf´s
