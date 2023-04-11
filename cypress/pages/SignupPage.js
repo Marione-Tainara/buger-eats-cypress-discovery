@@ -10,7 +10,6 @@ class signupPage {
     );
   }
   fillForm(deliver) {
-    //pegando informações pelo input e atribuito name, pega a variável de cima e ponto o dado que quero buscar dentro dela
     cy.get('input[name="fullName"]').type(deliver.name);
     cy.get('input[name="cpf"]').type(deliver.cpf);
     cy.get('input[name="email"]').type(deliver.email);
@@ -45,11 +44,8 @@ class signupPage {
     );
   }
   alertMessageShouldBe(expectMessage) {
-    // cy.get('div [class="alert-error"]').should("have.text", expectMessage);
-    // combinação de localizador e texto
     cy.contains(".alert-error", expectMessage).should("be.visible");
   }
 }
 
-//exportando como uma nova estancia
 export default new signupPage();
